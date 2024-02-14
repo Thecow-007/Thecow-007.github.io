@@ -1,0 +1,80 @@
+:root{
+    /* Icon Circles */
+    --iconCircleSize: 40px;
+    --rightIconsSpace: 10%;
+    --homeIconSpace: 10%;
+
+    /* Color Palate */
+    --aqua: #85FFC7;
+    --myrtle: #85FFC7;
+    --coral: #FF8552;
+    --light-coral: #FF9b70;
+    --platinum: #E6E6E6;
+    --jet: #39393A;
+
+    /* Color -> Element */
+    --headerBackgroundColor: var(--myrtle);
+    --iconCircleColor:var(--coral);
+    --headerBorderColor: var(--light-coral);
+}
+
+/* Header Font */
+.protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body{
+    margin: 0;
+}
+
+.main{
+    margin-top: 100px; 
+}
+
+.danielHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--headerBackgroundColor);
+    border-color: var(--headerBorderColor);
+    border: 2px solid var(--headerBorderColor);
+    margin: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.iconCircle{
+    border-radius: 50%;
+    background-color: rgb(40, 40, 183);
+    display: inline;
+    height: var(--iconCircleSize);
+    width: var(--iconCircleSize);
+    background-color: var(--iconCircleColor);
+}
+
+.homeIcon{
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    width: 10%;
+    justify-content: center;
+    width: var(--homeIconSpace);
+}
+
+.rightIcons{
+    display: flex;
+    flex-basis: 100px;
+    align-items: center;
+    justify-self: right;
+    justify-content: space-around;
+    width: var(--rightIconsSpace);
+}
+
+.myName{
+    display: inline;
+    align-self: center;
+    font: "Protest Strike";
+}
