@@ -8,6 +8,7 @@
     --aqua: #85FFC7;
     --myrtle: #85FFC7;
     --coral: #FF8552;
+    --dark-coral: #b85830;
     --light-coral: #FF9b70;
     --platinum: #E6E6E6;
     --jet: #39393A;
@@ -15,6 +16,7 @@
     /* Color -> Element */
     --headerBackgroundColor: var(--myrtle);
     --iconCircleColor:var(--coral);
+    --iconCircleColorOnHover:var(--dark-coral);
     --headerBorderColor: var(--light-coral);
 }
 
@@ -40,19 +42,24 @@ body{
     background-color: var(--headerBackgroundColor);
     border-color: var(--headerBorderColor);
     border: 2px solid var(--headerBorderColor);
-    margin: 0;
     top: 0;
-    width: 100%;
+    width: 99%;
+    margin: 3px;
     position: fixed;
 }
 
 .iconCircle{
     border-radius: 50%;
-    background-color: rgb(40, 40, 183);
-    display: inline;
+    display: flex;
     height: var(--iconCircleSize);
     width: var(--iconCircleSize);
     background-color: var(--iconCircleColor);
+    align-items: center;
+    justify-content: center;
+}
+
+.iconCircle:hover{
+    background-color: var(--iconCircleColorOnHover);
 }
 
 .homeIcon{
@@ -77,4 +84,10 @@ body{
     display: inline;
     align-self: center;
     font: "Protest Strike";
+}
+
+#homeIconImage, #gradCapIconImage, #resumeIconImage{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
