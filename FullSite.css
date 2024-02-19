@@ -1,0 +1,19 @@
+:root{
+    /* Color Palate */
+    --aqua: #85FFC7;
+    --myrtle: #85FFC7;
+    --coral: #FF8552;
+    --dark-coral: #b85830;
+    --light-coral: #FF9b70;
+    --platinum: #E6E6E6;
+    --jet: #39393A;
+    --light-jet: #8b8b92;
+
+
+    /* Color -> Element */
+    --site-background-color: var(--platinum);
+}
+
+body{
+    background-color: var(--site-background-color);
+}

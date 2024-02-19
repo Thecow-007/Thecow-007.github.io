@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>index Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="FullSite.css">
-    <link rel="stylesheet" href="footer.css">
-    <!-- Fonts -->
-
-    <!-- Header Font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
-    </style>
+    <!-- <link rel="stylesheet" href="footer.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
+    
     <!-- Header -->
     <header id="danielHeader">
         <div class="homeIcon">
@@ -197,7 +193,7 @@
             Rem eius adipisci numquam corrupti, blanditiis molestias unde quibusdam magni cupiditate, perspiciatis nemo illum excepturi deserunt aut inventore quo reiciendis necessitatibus veritatis maiores! Rerum placeat nulla inventore blanditiis, quos consequuntur?
         </p>
     </div>
-    <footer>
+    <!-- <footer>
         <p id="siteCreatedBy">Website created by Daniel Bierman</p>
         <div id="contactGrid">
             <p id="contact">Contact:</p>
@@ -205,7 +201,25 @@
             <p id="emailContact">Email: biermandaniel65@gmail.com</p>
             <p id="linkedInContact">LinkedIn: <a href="https://www.linkedin.com/in/daniel-bierman-4411402a2/">Daniel Bierman</a></p>
         </div>
-    </footer>
-</body>
+    </footer> -->
 
+    <!-- Bootstrap Footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+        </footer>
+      </div>
+</body>
 </html>
