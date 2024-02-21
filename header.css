@@ -13,13 +13,18 @@
     --platinum: #E6E6E6;
     --jet: #39393A;
     --light-jet: #8b8b92;
+    --moon-stone: #4059AD;
+    --dark-moon-stone: #2C3E77;
 
-
+ 
     /* Color -> Element */
     --headerBackgroundColor: var(--myrtle);
     --iconCircleColor:var(--coral);
     --iconCircleColorOnHover:var(--dark-coral);
     --headerBorderColor: var(--light-coral);
+
+    --my-name-color: var(--moon-stone);
+    --my-name-underline-color: var(--dark-moon-stone);
 }
 
 /* Header Font */
@@ -32,10 +37,6 @@
 
 body{
     margin: 0;
-}
-
-.main{
-    margin-top: 100px; 
 }
 
 #danielHeader{
@@ -87,6 +88,10 @@ body{
     display: inline;
     align-self: center;
     font: "Protest Strike";
+    color: var(--my-name-color);
+    text-decoration: underline;
+    text-decoration-color: var(--my-name-underline-color);
+    border-color: var(--jet);
 }
 
 #homeIconImage, #gradCapIconImage, #resumeIconImage{

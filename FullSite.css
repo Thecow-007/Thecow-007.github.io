@@ -17,3 +17,8 @@
 body{
     background-color: var(--site-background-color);
 }
+
+#main{
+    margin-top: 100px;
+    padding: 5px;
+}

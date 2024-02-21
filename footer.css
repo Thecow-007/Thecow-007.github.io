@@ -8,6 +8,8 @@
     --platinum: #E6E6E6;
     --jet: #39393A;
     --light-jet: #8b8b92;
+    --dark-moon-stone: #2C3E77;
+    --darker-moon-stone: #1c284e;
 
     /* Color -> Element */
     --footer-background-color: var(--light-jet);
@@ -16,18 +18,16 @@
 footer{
     display: flex;
     background-color: var(--footer-background-color);
-    max-height: 100px;
+    height: 100px;
     justify-content: space-between;
-    align-items: center;
     bottom: 0px;
     position: relative;
 }
  footer #contactGrid{
     display: inline-grid;
     max-width: 50%;
-    height: 60%;
-    grid-template-rows: repeat(2, 50px);
-    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     justify-self: right;
     justify-content: right;
@@ -35,5 +35,18 @@ footer{
 
  #siteCreatedBy{
     display: inline;
+    align-self: flex-end;
+    font-style: italic;
+    font-size: 14pt;
 
+ }
+
+ #siteCreatedBy>#danielBierman{
+    font-weight: bold;
+    color: var(--dark-moon-stone);
+
+ }
+
+ #siteCreatedBy>#danielBierman:hover{
+    color: var(--darker-moon-stone);
  }
