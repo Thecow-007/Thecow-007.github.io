@@ -1,0 +1,70 @@
+:root{
+    /* Color Palate */
+    --aqua: #85FFC7;
+    --myrtle: #85FFC7;
+    --coral: #FF8552;
+    --dark-coral: #b85830;
+    --light-coral: #FF9b70;
+    --platinum: #E6E6E6;
+    --jet: #39393A;
+    --light-jet: #8b8b92;
+    --moon-stone: #4059AD;
+    --dark-moon-stone: #2C3E77;
+    --light-green: #69DD79;
+    --silver: #C0C5C1;
+    --algonquin-green: #006341;
+    --algonquin-dark-green: #013e28;
+
+    /* Color -> Element */
+    --nav-bg-color: var(--light-green);
+    --nav-border-color: var(--algonquin-green);
+    --nav-element-border-color: var(--algonquin-green);
+    --nav-element-description-color: var(--algonquin-dark-green);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;    
+    border: 2px;
+    border-style: solid;
+
+    background-color: var(--nav-bg-color);
+    border-color: var(--nav-border-color);
+
+    margin: 2px;
+
+    font-family: 'Protest Strike';
+}
+
+nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav p{
+    color: var(--nav-element-description-color);
+    text-align: center;
+}
+
+.nav-element{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: var(--nav-element-border-color);
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav-element-container{
+    position: sticky;
+    top: 90px;
+}

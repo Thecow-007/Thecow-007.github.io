@@ -8,6 +8,7 @@
     --platinum: #E6E6E6;
     --jet: #39393A;
     --light-jet: #8b8b92;
+    --marian-blue: #2C3E77;
 
 
     /* Color -> Element */
@@ -16,6 +17,7 @@
 
 body{
     background-color: var(--site-background-color);
+    font-family: 'Roboto';
 }
 
 #main{

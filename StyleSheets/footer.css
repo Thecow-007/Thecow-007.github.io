@@ -16,21 +16,21 @@
 }
 
 footer{
-    display: flex;
+    display: grid;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 2fr; 
+
     background-color: var(--footer-background-color);
-    height: 100px;
     justify-content: space-between;
     bottom: 0px;
     position: relative;
 }
  footer #contactGrid{
     display: inline-grid;
-    max-width: 50%;
     grid-template-rows: repeat(2, 0.5fr);
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    justify-self: right;
-    justify-content: right;
  }
 
  #siteCreatedBy{
