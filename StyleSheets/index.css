@@ -1,4 +1,9 @@
-
+:root{
+    --light-jet: #8b8b92;
+    --light-algonquin-green: #66A18D;
+    --algonquin-green: #006341;
+    --dark-algonquin-green: #003328;
+}
 
 #main-grid{
     display: grid;
@@ -36,6 +41,7 @@ nav{
 #aboutMe-header>h1{
     font-family: 'Protest Strike';
     font-size: 150%;
+    letter-spacing: 1px;
 }
 
 #daniel-picture-section{
@@ -45,7 +51,7 @@ nav{
     grid-column-start: 4;
     grid-column-end: 5;
 
-    background-color: blue;
+    background-color: var(--light-jet);
     max-height: auto;
 
     display: flex;
@@ -66,6 +72,8 @@ nav{
 
     grid-column-start: 2;
     grid-column-end: 4;
+
+    padding: 10px;
 }
 
 #portfolio-featured{
@@ -85,8 +93,78 @@ nav{
 
     grid-column-start: 2;
     grid-column-end: 5;
-    background-color: greenyellow;
+    background-color: var(--light-algonquin-green);
     
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 1fr 1fr;
+
+    padding-bottom: 10px;
 }
+
+#algonquin-banner-container{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#algonquin-banner{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#algonquin-banner:hover{
+    border: 2px solid var(--dark-algonquin-green);
+}
+
+#course-title{
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Protest Strike';
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#course-title a{
+    text-decoration: none;
+    color: var(--dark-algonquin-green);
+}
+
+#course-title a:hover{
+    text-decoration: underline;
+}
+
+#course-desc{
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    padding-left: 10px;
+
+    font-size: 1em;
+}
+
+#course-list{
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+    padding-left: 10px;
+    padding-right: 50px;
+
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+#algonquin-courses-icon{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    width: 50px;
+    height: 50px;
+}
+
 
