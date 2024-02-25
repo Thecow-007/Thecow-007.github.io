@@ -1,14 +1,27 @@
 Courses page:
     Search bar?
     Filters button
+        by level high/low
+        by has textbook
+        by year high/low / select year
+        by hours descending / ascending
     Level Sections, Collaspable?
+    course description, expandable?
+    links to algonquin page per course
+    make search bar and filters button shorter
 
 Portfolio Page:
     thumbnails
     github links
+    add past web progamming labs
 
 Index page:
     Portfolio -featured section
 
 Resume page:
     Add information
+    border / bg color around picture. Something like index page.
+    portfolio - featured card
+
+Nav Bar:
+    Have it collapse to top of page when on mobile + maybe same thing for pic of me
