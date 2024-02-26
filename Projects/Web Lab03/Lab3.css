@@ -1,0 +1,107 @@
+/* CSS by Daniel Bierman */
+:root {
+    /* Colors */
+    --page_background_color: #DDD78D;
+    --header_footer_BG_color: #60594D;
+    --header_footer_text_color: #93A29B;
+    --text_color: rgb(28, 32, 37);
+    --link_color: #8B635C;
+    --quote-bg-color: #DCBf85;
+
+
+}
+
+/* font */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--page_background_color);
+    font-family: "Poppins";
+    color: var(--text_color);
+}
+
+#topOfPage {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--header_footer_BG_color);
+    border: 4px solid var(--text_color);
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    color: var(--header_footer_text_color);
+    justify-content: center;
+    font-size: 150%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    font-size: 12pt;
+}
+
+nav>a{
+    background-color: white;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link_color);
+}
+
+footer {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--header_footer_BG_color);
+    border: 4px solid var(--text_color);
+    padding: 10px;
+}
+
+#waterfallImg {
+    float: right;
+    width: 25vw;
+    margin: 10px;
+}
+
+p, ul, li{
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+blockquote{
+    text-align: center;
+    background-color: var(--quote-bg-color);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+ul>li{
+    font-weight: bold;
+}
+
+footer>p{
+    text-align: right;
+    font-style: italic;
+    font-size: 10pt;
+    margin-top: 20px;
+}
+footer>a{
+    align-self: center;
+}
