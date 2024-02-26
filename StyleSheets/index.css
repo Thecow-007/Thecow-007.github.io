@@ -19,6 +19,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    #pf-content{
+        flex-wrap: wrap;
+    }
+
+    #portfolio-featured{
+        display: flex !important;
+        flex-direction: column;
+    }
 }
 
 nav{
