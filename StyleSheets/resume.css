@@ -9,6 +9,9 @@
     --jet: #39393A;
     --light-jet: #8b8b92;
     --marian-blue: #2C3E77;
+    --light-algonquin-green: #66A18D;
+    --algonquin-green: #006341;
+    --dark-algonquin-green: #003328;
 
     /* Color -> Element */
     --bottom-border-color: var(--marian-blue);
@@ -16,7 +19,7 @@
 #main{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr 3fr 3fr;
+    grid-template-rows: auto auto 3fr 3fr 3fr;
 }
 
 nav{
@@ -56,6 +59,8 @@ nav{
     position: relative;
 
     border-bottom: 2px solid var(--bottom-border-color);
+
+    padding-left: 10px;
 }
 
 #contactGrid #contact-me{
@@ -68,9 +73,99 @@ nav{
     grid-column: 2/4;
 }
 
+#algonquin-courses{
+    grid-row-start: 7;
+    grid-row-end: 9;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: var(--light-algonquin-green);
+    
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    padding-bottom: 10px;
+}
+
+#algonquin-banner-container{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#algonquin-banner{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#algonquin-banner:hover{
+    border: 2px solid var(--dark-algonquin-green);
+}
+
+#course-title{
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Protest Strike';
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#course-title a{
+    text-decoration: none;
+    color: var(--dark-algonquin-green);
+}
+
+#course-title a:hover{
+    text-decoration: underline;
+}
+
+#course-desc{
+    grid-row: 2/3;
+    grid-column: 1/3;
+
+    padding-left: 10px;
+
+    font-size: 1em;
+
+    max-height: 100px;
+}
+
+#course-list{
+    grid-row: 3/4;
+    grid-column: 1/3;
+
+    padding-left: 10px;
+    padding-right: 50px;
+
+    display: flex;
+    text-align: right;
+    align-items: center;
+}
+
+#algonquin-courses-icon{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    width: 50px;
+    height: 50px;
+}
+
 #experience{
     grid-row: 4/5;
     grid-column: 2/4;
+}
+
+#experience>h1{
+    font-size: 2em;
+}
+
+.job-desc>ul>li{
+    margin: 5px;
 }
 
 #skills{
