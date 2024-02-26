@@ -1,0 +1,19 @@
+How to Play:
+	first, enter your name in the box and press enter.
+	use WASD to move your player character around the map and use E to enter buildings
+	buildings:
+		E - enemy
+		C - church (heals hp)
+		T - tower (3 fights, scaling in difficulty with a reward at the end)
+		* - chest (1 random weapon of teir 1-3 (out of 5))
+		F - Forge (upgrades current weapon)
+
+	Attacking:
+		select your attack with WASD and use E to use it, different types of monsters will take
+		more or less damage depending on the attack. - Taunt does not deal damage, but it increases the damage 
+		you do.
+
+	Use I to go to your inventory and select your weapon. (id recomend heading to some chests before using this feature)
+	
+	Try to clear the board and collect all the weapons to win!
+		

@@ -1,0 +1,50 @@
+
+Building Types = Church, Tower, Enemy (small / Mid, Bosses are only in Towers), Chest, Forge
+
+chars = hashmap<string, string> (<coords, char at coords>)
+coords will be saved as "0105" for x = 1, y = 5 or "5534" for x = 55, y = 34
+
+enum selOp{
+	SLASH, STAB, RUN, TAUNT
+}
+selOP currentSel = SLASH;
+
+
+main(){
+	
+	drawScreen()
+	keyListener()
+	
+	
+}
+
+keyListener(){
+	when inMAP:
+		W pressed: mvUp()
+		S pressed: mvDown()
+		A pressed: mvLeft()
+		D pressed: mvRight()
+		E pressed: use()
+	
+	when inFIGHT:
+		W pressed: selUp()
+		S: selDown()
+		A: selLeft()
+		D: selRight()
+		E: attack()
+}
+
+mv_funcs(){
+	chars(player coords) = def_char
+	player coords = (one in the desired direction)
+	chars(player coords) = 'p'
+	(basically we delete the old char, set the new player coords then set the new player coords to P (the player character))
+}
+
+selFuncs(){
+	
+	
+	
+	
+	
+}
