@@ -17,7 +17,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    </style> 
+    </style>
+
+    <!-- Expand Content Function -->
+    <script>
+        function toggleExpand(id) {
+            var content = document.getElementById(id);
+            content.classList.toggle('active');
+        }
+    </script>
 
 </head>
 
@@ -100,7 +108,7 @@
             <div id="hours-header">
                 <p>Hours:</p>
             </div>
-            
+
         </section>
 
         <!-- Course Elements -->
@@ -109,106 +117,938 @@
 
         <section id="course-elements">
             <section id="level-one-courses">
+                <h1>Level One Courses:</h1>
                 <!-- Intro to Comp Prog -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8116</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Introduction to Computer Programming</h1>
+                        <p class="less">Possessing the fundamentals of logic, problem-solving and programming language
+                            structure provides a solid foundation for further study in the field. </p>
+                        <p class="more" id="CST8116-more">
+                            Students develop introductory knowledge of computer programming with emphasis on problem
+                            analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams and
+                            testing, with the Java programming language used as a means to implement problem solution
+                            designs. Through an introduction to the Java programming language students use sequential
+                            structures, selection structures, repetition structures, variables, constants, methods,
+                            constructors, one-dimensional arrays, object-oriented programming, classes, objects,
+                            abstraction, encapsulation, inputs, outputs, coding conventions and documentation. Theory is
+                            reinforced with application by means of practical laboratory assessments.
+                        </p>
+                        <a href="#CST8816-more" class="read-more" onclick="toggleExpand('CST8116-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
                 </div>
-                <div class="course-element-code">
-                    <p>CST8116</p>
-                </div>
-                <div class="course-element-desc">
-                    <h1>Introduction to Computer Programming</h1>
-                    <p></p>
-                </div>
-                <div class="course-element-hours">
-                    <p>70.0</p>
-                </div>
-            </div>
 
-            <!-- Computer Essentials -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
+                <!-- Computer Essentials -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8118</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Computer Essentials</h1>
+                        <p class="less">Maintaining a computer, using operating system and productivity software, and
+                            expressing related environmental and sustainability concerns, is an important part of
+                            working with Information Technology.</p>
+                        <p class="more" id="CST8118-more">
+                            Students explain computer hardware, and use operating system software to maintain, utilize,
+                            and secure a computer. Students practice the use of spreadsheet software to solve problems,
+                            use formulas, and visualize data with charts. Students discuss computer hardware and
+                            software with regards to financial and environmental sustainability. Theory is reinforced
+                            with application by means of practical laboratory assessments, including using
+                            virtualization software to install guest operating systems onto a host computer.
+                        </p>
+                        <a href="#CST8118-more" class="read-more" onclick="toggleExpand('CST8118-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
                 </div>
-                <div class="course-element-code">
-                    <p>CST8118</p>
-                </div>
-                <div class="course-element-desc">
-                    <h1>Computer Essentials</h1>
 
+                <!-- Introduction to Database -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8215</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Introduction to Database</h1>
+                        <p class="less">Databases are used to store data and are a core component of many information
+                            technology systems.</p>
+                        <p class="more" id="CST8215-more">
+                            Students learn the fundamentals of relational databases design using Entity Relation
+                            Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify and query a
+                            database. Students design and create databases that are maintainable, secure and adaptable
+                            to change in business requirements, using normalization. Students become familiar with the
+                            functions of a Database Management System (DBMS) and its components in comparison with
+                            legacy systems and alternative information storage mechanisms.
+                        </p>
+                        <a href="#CST8215-more" class="read-more" onclick="toggleExpand('CST8215-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
                 </div>
-                <div class="course-element-hours">
-                    <p>56.0</p>
-                </div>
-            </div>
 
-            <!-- Intro to Databases -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
-                </div>
-                <div class="course-element-code">
-                    <p>CST8285</p>
-                </div>
-                <div class="course-element-desc">
-                    <h1>Introduction to Databases</h1>
-                </div>
-                <div class="course-element-hours">
-                    <p>70.0</p>
-                </div>
-            </div>
 
-            <!-- Achieving Success in Changing Environments -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
+                <!-- Achieving Success in Changing Environments -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8300</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Achieving Success in Changing Environments</h1>
+                        <p class="less">Rapid changes in technology have created personal and employment choices that
+                            challenge each of us to find our place as contributing citizens in the emerging society.</p>
+                        <p class="more" id="CST8300-more">
+                            Life in the 21st century presents significant opportunities, but it also creates potential
+                            hazards and ethical problems that demand responsible solutions. Students explore the
+                            possibilities ahead, assess their own aptitudes and strengths, and apply critical thinking
+                            and decision-making tools to help resolve some of the important issues in our complex
+                            society with its competing interests.
+                        </p>
+                        <a href="#CST8300-more" class="read-more" onclick="toggleExpand('CST8300-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
                 </div>
-                <div class="course-element-code">
-                    <p>CST8300</p>
-                </div>
-                <div class="course-element-desc">
-                    <h1>Achieving Success in Changing Environments</h1>
-                </div>
-                <div class="course-element-hours">
-                    <p>42.0</p>
-                </div>
-            </div>
 
-            <!-- Comms 1 -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
-                </div>
-                <div class="course-element-code">
-                    <p>ENL1813T</p>
-                </div>
-                <div class="course-element-desc">
-                    <h1>Communications I</h1>
-                </div>
-                <div class="course-element-hours">
-                    <p>42.0</p>
-                </div>
-            </div>
 
-            <!-- Tech Math for Computer Science -->
-            <div class="course-element">
-                <div class="course-element-level">
-                    <p>1</p>
+                <!-- Communications I -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>ENL1813T</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Communications I</h1>
+                        <p class="less">Communication remains an essential skill sought by employers, regardless of
+                            discipline or field of study.</p>
+                        <p class="more" id="ENL1813T-more">
+                            Using a practical, vocation-oriented approach, students focus on meeting the requirements of
+                            effective communication. Through a combination of lectures, exercises, and independent
+                            learning, students practise writing, speaking, reading, listening, locating and documenting
+                            information and using technology to communicate professionally. Students develop and
+                            strengthen communication skills that contribute to success in both educational and workplace
+                            environments.
+                        </p>
+                        <a href="#ENL1813T-more" class="read-more" onclick="toggleExpand('ENL1813T-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
                 </div>
-                <div class="course-element-code">
-                    <p>MAT8001C</p>
+
+
+                <!-- Technical Mathematics for Computer Science -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>1</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>MAT8001C</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Technical Mathematics for Computer Science</h1>
+                        <p class="less">The study of algebraic and transcendental functions is an essential prerequisite
+                            to Calculus.</p>
+                        <p class="more" id="MAT8001C-more">
+                            Students manipulate algebraic expressions, solve algebraic equations and linear systems and
+                            learn the properties of and graph algebraic and transcendental functions. Students
+                            investigate computer number systems in addition to Boolean algebra and logic to help solve
+                            problems involving computer systems. Students also study the addition and subtraction of
+                            vectors using vector components. Delivered in a modular format, this course is equivalent to
+                            the completion of all of the following math modules MAT8100 - A, B, C, D, E, F, and L.
+                        </p>
+                        <a href="#MAT8001C-more" class="read-more" onclick="toggleExpand('MAT8001C-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
                 </div>
-                <div class="course-element-desc">
-                    <h1>Technical Mathamatics for Computer Science</h1>
-                </div>
-                <div class="course-element-hours">
-                    <p>56.0</p>
-                </div>
-            </div>
             </section>
-            
 
+            <!-- Level Two Courses -->
+            <section id="level-two-courses">
+
+                <h1>Level Two Courses:</h1>
+
+                <!-- Database Systems -->
+                <!-- Database Systems -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST2355</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Database Systems</h1>
+                        <p class="less">Database systems can automate data processing tasks as well as tie into the
+                            security of information technology systems.</p>
+                        <p class="more" id="CST2355-more">
+                            Students acquire practical experience using market-leading object-relational database
+                            management systems like Oracle and MySQL. Hands-on experience with advanced engineering
+                            modeling tools along with SQL, SQL scripts, and programming with Oracle's PL/SQL blocks is
+                            provided. Database concepts covered include advanced SQL, case structures, rollup and cube
+                            operations, metadata manipulation, data storage and retrieval, security and transaction
+                            control, and data warehousing.
+                        </p>
+                        <a href="#CST2355-more" class="read-more" onclick="toggleExpand('CST2355-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+
+                <!-- Operating System Fundamentals (GNU/Linux) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8102</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Operating System Fundamentals (GNU/Linux)</h1>
+                        <p class="less">Operating systems form the backbone of information technology systems
+                            coordinating the interaction between hardware and software.</p>
+                        <p class="more" id="CST8102-more">
+                            Students explore the basic concepts and components of Operating Systems (OS), and how they
+                            function and interact with hardware and software components. Details of operating system
+                            structures, process management, storage management, installation, configuration, and
+                            administration are examined in theory and through practical assignments based on the
+                            GNU/Linux operating system. Lab work implements theory by developing skills using the
+                            powerful GNU/Linux command-line tools and utilities.
+                        </p>
+                        <a href="#CST8102-more" class="read-more" onclick="toggleExpand('CST8102-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+
+                <!-- Object Oriented Programming (Java) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8284</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Object Oriented Programming (Java)</h1>
+                        <p class="less">Working in the field of information technology as a programmer requires a firm
+                            understanding of Object-Oriented Programming (OOP) concepts.</p>
+                        <p class="more" id="CST8284-more">
+                            Students explore object-oriented programming methodology using the Java programming
+                            language. Object-oriented concepts such as encapsulation, inheritance, abstraction, and
+                            polymorphism are covered and reinforced with practical applications. Basics of data
+                            structures and algorithms as well as basic Graphical User Interface (GUI) programming are
+                            also explored.
+                        </p>
+                        <a href="#CST8284-more" class="read-more" onclick="toggleExpand('CST8284-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+
+                <!-- Web Programming -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8285</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Web Programming</h1>
+                        <p class="less">The World Wide Web (WWW) has become an integrated part of everyday life.</p>
+                        <p class="more" id="CST8285-more">
+                            Students develop basic skills of web programming, website design, and implementation using
+                            JavaScript, HTML5, and PHP. Lectures are reinforced by practical assignments that encourage
+                            students to construct and maintain their own websites.
+                        </p>
+                        <a href="#CST8285-more" class="read-more" onclick="toggleExpand('CST8285-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+
+                <!-- Technical Communication for Engineering Technologies -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>ENL2019T</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Technical Communication for Engineering Technologies</h1>
+                        <p class="less">The ability to communicate effectively in a technically-oriented
+                            interdisciplinary workplace is a foundational skill in an innovation-driven economy.</p>
+                        <p class="more" id="ENL2019T-more">
+                            Students are exposed to exercises and assignments designed to foster independent and
+                            collaborative critical thinking, research, writing, visual communication, and presentation
+                            skills related to technical topics.
+                        </p>
+                        <a href="#ENL2019T-more" class="read-more" onclick="toggleExpand('ENL2019T-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
+                </div>
+
+
+                <!-- Cooperative Education and Job Readiness -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>2</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>GEP1001</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Cooperative Education and Job Readiness</h1>
+                        <p class="less">Students are guided through a series of activities that prepare them to conduct
+                            a professional job search and succeed in the workplace.</p>
+                        <p class="more" id="GEP1001-more">
+                            Through a detailed orientation, students learn the cooperative education program policies
+                            and procedures related to searching and securing a work term opportunity. They identify
+                            their strengths and transferable skills and participate in workshop-style sessions that
+                            focus on cover letter and resume development, interview techniques, and job search
+                            strategies. Students also learn how to navigate a web-based resource centre used to post
+                            employment and cooperative education job opportunities. Reflection on workplace success,
+                            ethics, and responsibilities is also part of the course.
+                        </p>
+                        <a href="#GEP1001-more" class="read-more" onclick="toggleExpand('GEP1001-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>18.0</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Level Three Courses -->
+            <section id="level-three-courses">
+
+                <h1>Level Three Courses:</h1>
+                <!-- Systems Analysis and Design (CST2234) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>3</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST2234</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Systems Analysis and Design</h1>
+                        <p class="less">Complex information technology systems require extensive planning and design.
+                        </p>
+                        <p class="more" id="CST2234-more">
+                            Guided by industry standard software engineering methodologies, students gain hands-on
+                            experience with case studies used to develop systems from inception through elaboration and
+                            transition phases. Object-oriented design, modeling tools, and techniques are used to
+                            produce system specifications. Project management principles are also used within
+                            team-developed projects. Software methodologies discussed include the Systems Development
+                            Life Cycle (SDLC), agile approach, Rational Unified Process (RUP), and Rapid Application
+                            Development (RAD).
+                        </p>
+                        <a href="#CST2234-more" class="read-more" onclick="toggleExpand('CST2234-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Graphical Interface Programming (CST2335) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>3</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST2335</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Mobile Graphical Interface Programming</h1>
+                        <p class="less">Mobile devices play an instrumental part of everyday life, thus requiring
+                            knowledge of mobile graphical user interface development.</p>
+                        <p class="more" id="CST2335-more">
+                            Students explore graphical user interface programming in a mobile Android environment. They
+                            learn how to program applications using the latest Android development tools, covering
+                            topics such as application architecture, interface design, network communication, and
+                            database integration.
+                        </p>
+                        <a href="#CST2335-more" class="read-more" onclick="toggleExpand('CST2335-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Network Programming (CST8109) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>3</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8109</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Network Programming</h1>
+                        <p class="less">Software programming in today's environment requires detailed knowledge of the
+                            underlying network topology, its implementation, and programming support functions.</p>
+                        <p class="more" id="CST8109-more">
+                            Students explore topics including the basic structure, design, and layered communications
+                            models, with an emphasis on data communications, TCP/IP protocol suite, socket programming,
+                            and multi-threading concepts. Labs include practical exercises in basic networking and using
+                            socket programming, along with multi-threading, in an environment rich with common
+                            networking tools for diagnosing and troubleshooting typical network programming problems.
+                        </p>
+                        <a href="#CST8109-more" class="read-more" onclick="toggleExpand('CST8109-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+                <!-- Object Oriented Programming with Design Patterns (CST8288) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>3</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8288</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Object Oriented Programming with Design Patterns</h1>
+                        <p class="less">Design patterns are programming architecture solutions to common challenges
+                            faced in software implementation.</p>
+                        <p class="more" id="CST8288-more">
+                            Students implement best practices of object-oriented program development with software
+                            design patterns. They also apply Unified Modeling Language (UML) program specifications in
+                            the Java programming language. SQL through JDBC technology is used embedded for developing
+                            and using "data access objects". Course topics include refactoring, domain modeling, JDBC
+                            and multithreaded servlet programming. Students develop proficiency in creating, testing,
+                            debugging, deploying, and documenting programs and servlets through practical application.
+                        </p>
+                        <a href="#CST8288-more" class="read-more" onclick="toggleExpand('CST8288-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+                <!-- Business Programming (CST8283) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>3</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8283</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Business Programming</h1>
+                        <p class="less">Information systems built using the COBOL programming language support important
+                            institutions such as government services and the banking sectors.</p>
+                        <p class="more" id="CST8283-more">
+                            Students create COBOL programs in a business environment using structured methodology in the
+                            latest visual programming environment. Topics include output design, logic design tools,
+                            structured, top-down and modular coding, testing and debugging, and documentation. Students
+                            examine interactive, file-based, and database processing of data related to business
+                            problems. Arrays, indexed files, database access, and sub-programs are explored.
+                        </p>
+                        <a href="#CST8283-more" class="read-more" onclick="toggleExpand('CST8283-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Level Four Courses -->
+            <section id="level-four-courses">
+
+                <h1>Level Four Courses:</h1>
+                <!-- Advanced Database Topics (CST8276) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>4</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8276</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Advanced Database Topics</h1>
+                        <p class="less">Database administration is an important role, in particular for deployed
+                            information technology systems.</p>
+                        <p class="more" id="CST8276-more">
+                            Teams and individuals explore advanced database topics including database administration
+                            (using Oracle), data governance, globalization, security and advances in database
+                            technology. Topic coverage includes business intelligence, data warehouses, data
+                            visualization, big data, NoSQL and graph databases. Database administration tasks requiring
+                            knowledge of database architecture are examined: relational vs. non-relational models,
+                            security, performance, database distribution, database sharing, backup and recovery.
+                        </p>
+                        <a href="#CST8276-more" class="read-more" onclick="toggleExpand('CST8276-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+                <!-- Enterprise Application Programming (CST8277) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>4</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8277</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Enterprise Application Programming</h1>
+                        <p class="less">Enterprise applications connect clients to services that are based on data
+                            stored in database management systems.</p>
+                        <p class="more" id="CST8277-more">
+                            With a focus on the IT Enterprise, students examine the application enterprise environment
+                            using and extending the technologies learned in previous courses. They examine commonly used
+                            enterprise systems development technologies such as Java/Jakarta Enterprise Edition, cloud
+                            computing, security, and the corporate database repository.
+                        </p>
+                        <a href="#CST8277-more" class="read-more" onclick="toggleExpand('CST8277-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+                <!-- Software Development Project (CST8319) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>4</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8319</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Software Development Project</h1>
+                        <p class="less">Industry recognizes the value of graduates possessing real-world software
+                            development experience.</p>
+                        <p class="more" id="CST8319-more">
+                            Following the agile software engineering methodology, teams work with clients to analyze
+                            business needs, determine computer system requirements, model system designs, build
+                            prototypes, test code, and deliver final products. Project management techniques are used to
+                            monitor progress and organize tasks. Students participate in interviews, technical reviews,
+                            presentations, and the preparation of technical reports. The culmination of the course is a
+                            final presentation and technical review, followed by the delivery of the finished product.
+                        </p>
+                        <a href="#CST8319-more" class="read-more" onclick="toggleExpand('CST8319-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>28.0</p>
+                    </div>
+                </div>
+
+                <!-- Programming Language Research Project (CST8333) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>4</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8333</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Programming Language Research Project</h1>
+                        <p class="less">Learning a new programming language or framework on your own is a challenge
+                            faced by programmers on the job as part of their career.</p>
+                        <p class="more" id="CST8333-more">
+                            Students explore this process of self-study by applying project planning, applied research,
+                            testing, and implementation of basic and advanced concepts appropriate to the language or
+                            framework under study. They develop major milestones and deliverables culminating in a
+                            project and reflective summary submission.
+                        </p>
+                        <a href="#CST8333-more" class="read-more" onclick="toggleExpand('CST8333-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Level Five Courses -->
+            <section id="level-five-courses">
+
+                <h1>Level Five Courses:</h1>
+                <!-- Analysis and Design Using Emerging Technologies (CST8400) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8400</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Analysis and Design Using Emerging Technologies</h1>
+                        <p class="less">In the world of technology there is an ever changing and growing number of
+                            disruptive products, exciting tools and assistive services technology professionals can
+                            leverage as we invent, develop and produce technology solutions.</p>
+                        <p class="more" id="CST8400-more">
+                            Students explore emerging technologies and further develop the skillset to rapidly build and
+                            deploy technology solutions. They research emerging technologies and, through hands-on
+                            learning, examine and implement these cutting-edge solutions. Topics may include machine
+                            learning and artificial intelligence, the Internet of Things (IoT), blockchain, big data,
+                            data analytics, and visualization.
+                        </p>
+                        <a href="#CST8400-more" class="read-more" onclick="toggleExpand('CST8400-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Advanced Mobile Applications (CST8410) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8410</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Advanced Mobile Applications</h1>
+                        <p class="less">Mobile devices are the primary means of communication in today's world, and
+                            having knowledge in development of mobile applications is advantageous.</p>
+                        <p class="more" id="CST8410-more">
+                            Students expand their mobile application development knowledge through applied projects.
+                            Topics include an in-depth study of application development, integration of application
+                            programming interfaces (APIs) and utilization of mobile cloud services. Students experiment
+                            with location, networking, data storage, wearable technology, and wireless communication
+                            using current industry protocols. The final capstone project is based on individual or group
+                            application development.
+                        </p>
+                        <a href="#CST8410-more" class="read-more" onclick="toggleExpand('CST8410-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Information Systems Development and Deployment (CST8411) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8411</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Information Systems Development and Deployment</h1>
+                        <p class="less">In a team environment it is important to coordinate development efforts to
+                            increase efficiency and reduce errors.</p>
+                        <p class="more" id="CST8411-more">
+                            Students explore the techniques and architectures involved in developing, testing and
+                            deploying full-stack applications. The various phases of continuous integration and delivery
+                            are a key focus as well as application architecture and API design. Through a hands-on
+                            approach, students have an opportunity to work in teams to enhance, test, and deploy a
+                            working full-stack application.
+                        </p>
+                        <a href="#CST8411-more" class="read-more" onclick="toggleExpand('CST8411-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
+                </div>
+
+                <!-- User Interface Design in Application Development (CST8412) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8412</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>User Interface Design in Application Development</h1>
+                        <p class="less">Possessing the skills to write software that is user-friendly, accessible and
+                            maintainable is desirable by industry and end users.</p>
+                        <p class="more" id="CST8412-more">
+                            Students gain hands-on experience in developing and deploying database-driven applications,
+                            with a focus on high-level software architecture and building interactive graphical user
+                            interfaces. They build on their previous knowledge of software design to implement modular,
+                            testable application code. Students examine and utilize modern approaches to interface
+                            design using native and custom interface controls. Techniques for interacting with operating
+                            system APIs are explored.
+                        </p>
+                        <a href="#CST8412-more" class="read-more" onclick="toggleExpand('CST8412-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Data Warehousing and Advanced Business Intelligence (CST8413) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8413</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Data Warehousing and Advanced Business Intelligence</h1>
+                        <p class="less">Data warehousing systems are a foundation for Business Intelligence (BI) and
+                            decision making within an organization.</p>
+                        <p class="more" id="CST8413-more">
+                            Through designing and maintaining data warehouses, students examine the unique design
+                            requirements of data warehouses and gain experience performing Extraction, Transformation
+                            and Loading (ETL) processes. They explore the analysis and presentation tools and techniques
+                            that can help inform and improve data-driven decisions.
+                        </p>
+                        <a href="#CST8413-more" class="read-more" onclick="toggleExpand('CST8413-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Applied Research Project 1 (CST8414) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>5</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8414</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Applied Research Project 1</h1>
+                        <p class="less">Experience with practical projects provides students with learning opportunities
+                            to gain industry-relevant insight and experience.</p>
+                        <p class="more" id="CST8414-more">
+                            Through collaborative participation in applied research projects and working closely with
+                            stakeholders in real-world workplace environments, students develop solutions for problems
+                            of significant technical complexity. The phases of software development are expanded on
+                            including gathering requirements, documenting, designing, coding and testing working
+                            software prototypes. Knowledge about testing, debugging and quality assurance is expanded
+                            along with Agile software development methodology practices including Scrum, Kanban and
+                            Lean. Drawing upon skills previously acquired, students plan, conduct research for, and
+                            begin the creation of a written report that summarizes the work and findings resulting from
+                            the first release of the project.
+                        </p>
+                        <a href="#CST8414-more" class="read-more" onclick="toggleExpand('CST8414-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Level Six Courses -->
+            <section id="level-six-courses">
+
+                <h1>Level Six Courses:</h1>
+
+                <!-- Cybersecurity (CST8512) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>6</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8512</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Cybersecurity</h1>
+                        <p class="less">Organizations recognize the importance of cybersecurity in the design,
+                            development and management of information systems.</p>
+                        <p class="more" id="CST8512-more">
+                            Students explore cybersecurity threats and best-practice responses to those threats. Primary
+                            focus is given to software and application layers. As well, to give students a broad
+                            understanding of the threat landscape, a variety of attack vectors through to the network
+                            and physical layers are discussed. Students gain hands-on experience with the tools and
+                            techniques used to mitigate security threats, and consider policies and regulations
+                            regarding cybersecurity and information privacy.
+                        </p>
+                        <a href="#CST8512-more" class="read-more" onclick="toggleExpand('CST8512-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Quality Assurance and Testing (CST8513) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>6</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8513</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Quality Assurance and Testing</h1>
+                        <p class="less">Assuring the quality of information technology systems is vital as these systems
+                            support businesses, health systems, entertainment franchises and more.</p>
+                        <p class="more" id="CST8513-more">
+                            Students employ a variety of testing strategies and industry best practices to analyze,
+                            document, develop, monitor, and maintain robust computing system solutions. They develop
+                            these skills through a combination of lecture and practical activities using industry tools
+                            and techniques.
+                        </p>
+                        <a href="#CST8513-more" class="read-more" onclick="toggleExpand('CST8513-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>56.0</p>
+                    </div>
+                </div>
+
+                <!-- Business and Information Technology (CST8514) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>6</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8514</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Business and Information Technology</h1>
+                        <p class="less">Information systems are an integral part of conducting business in today's
+                            world.</p>
+                        <p class="more" id="CST8514-more">
+                            Students develop an awareness of business concepts, business information systems, business
+                            processes, risk assessment, business impact analysis, software licensing, ethics, government
+                            standards, regulatory compliance and business media in the context of systems analysis and
+                            design and personal and professional development. Theory is reinforced with discussions,
+                            group work, case study and research.
+                        </p>
+                        <a href="#CST8514-more" class="read-more" onclick="toggleExpand('CST8514-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
+                </div>
+
+                <!-- Applied Research Project 2 (CST8515) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>6</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>CST8515</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Applied Research Project 2</h1>
+                        <p class="less">The ability to identify and satisfy all stakeholder expectations is essential in
+                            successful product development and delivery.</p>
+                        <p class="more" id="CST8515-more">
+                            Students collaborate to complete their applied research project in consultation with faculty
+                            and community partner to create deliverables by monitoring and controlling the project
+                            resources. Activities include implementing, testing, debugging and deploying information
+                            technology systems, creating installation packages, addressing security issues and concerns,
+                            adhering to quality assurance standards, and creating supporting documentation. Students
+                            defend developed solutions in formal oral and written presentations, and showcase the
+                            project to peers, faculty, staff and invited guests.
+                        </p>
+                        <a href="#CST8515-more" class="read-more" onclick="toggleExpand('CST8515-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>70.0</p>
+                    </div>
+                </div>
+
+                <!-- Entrepreneurship (MGT0114) -->
+                <div class="course-element">
+                    <div class="course-element-level">
+                        <p>6</p>
+                    </div>
+                    <div class="course-element-code">
+                        <p>MGT0114</p>
+                    </div>
+                    <div class="course-element-desc">
+                        <h1>Entrepreneurship</h1>
+                        <p class="less">Taking a concept for a software product or service to market requires specific
+                            business knowledge.</p>
+                        <p class="more" id="MGT0114-more">
+                            Students examine entrepreneurship as a fundamental skill for Information Technology (IT).
+                            They explore how to investigate and develop the key components of a successful business
+                            plan. Focus is on developing business skills and innovative attitudes essential for those
+                            who want to be a founder of a technology start-up, a product manager working in a technology
+                            start-up, or an agent of change in an existing company.
+                        </p>
+                        <a href="#MGT0114-more" class="read-more" onclick="toggleExpand('MGT0114-more')">Read More /
+                            Less</a>
+                    </div>
+                    <div class="course-element-hours">
+                        <p>42.0</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Disclaimer -->
+            <Section id="disclaimer">
+                <h1>Disclaimer:</h1>
+                <p>All information on this page was gathered from Algonquin's <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/#courses">Computer Programming and Analysis</a> page.</p>
+            </Section>
         </section>
     </section>
 

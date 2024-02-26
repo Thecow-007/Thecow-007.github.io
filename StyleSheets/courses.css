@@ -125,10 +125,32 @@ nav{
 
 .course-element-description{
     grid-column: 3/4;
+
+    overflow: hidden;
+}
+
+.more{
+    display: none;
+}
+
+.less{
+    display: inline;
+}
+
+.more.active{
+    display: inline;
+}
+
+.read-more{
+    display: block;
 }
 
 .course-element-hours{
     grid-column: 4/5;
 
     border-right: none;
+}
+
+#disclaimer{
+    padding-left: 10px;
 }
