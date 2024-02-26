@@ -1,14 +1,24 @@
 :root{
+    --jet: #39393A;
     --light-jet: #8b8b92;
     --light-algonquin-green: #66A18D;
     --algonquin-green: #006341;
     --dark-algonquin-green: #003328;
+    --light-moon-stone: #A3CBE1;
+    --marian-blue: #2C3E77;
 }
 
 #main-grid{
     display: grid;
     grid-template-columns: 2fr 3fr 3fr 2fr;
     grid-template-rows: auto auto auto 1fr 1fr 1fr auto auto;
+}
+
+@media screen and (max-width: 768px) {
+    #main-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 nav{
@@ -84,10 +94,60 @@ nav{
 
     grid-column-start: 2;
     grid-column-end: 5;
-    background-color: bisque;
+    background-color: var(--light-moon-stone);
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 7fr 1fr;
+
+    border: 2px solid var(--marian-blue);
+
+    margin: 2px;
+}
+
+#pf-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+    padding-left: 10px;
+}
+
+#pf-content{
+    grid-row: 2/3;
+    grid-column: 1/2;
 
     display: flex;
 }
+
+.pf-element{
+    border: solid var(--light-jet) 2px;
+    margin: 5px;
+}
+
+.pf-element-title{
+    text-align: center;
+}
+
+.pf-thumbnail-container{
+    padding: 20px;
+}
+
+.pf-thumbnail{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#pf-link{
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+    text-align: right;
+    padding-right: 10px;
+}
+
+
 
 #algonquin-courses{
     grid-row-start: 7;
@@ -96,6 +156,9 @@ nav{
     grid-column-start: 2;
     grid-column-end: 5;
     background-color: var(--light-algonquin-green);
+    border: 2px solid var(--algonquin-green);
+
+    margin: 2px;
     
     display: grid;
     grid-template-columns: 2fr 3fr;

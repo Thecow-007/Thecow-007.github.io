@@ -27,6 +27,9 @@ footer{
     position: relative;
 }
  footer #contactGrid{
+   grid-row: 1/2;
+   grid-column: 3/4;
+
     display: inline-grid;
     grid-template-rows: repeat(2, 0.5fr);
     grid-template-columns: repeat(2, 1fr);
@@ -39,6 +42,8 @@ footer{
     font-style: italic;
     font-size: 14pt;
 
+    grid-row: 1/2;
+    grid-column: 1/2;
  }
 
  #siteCreatedBy>#danielBierman{
