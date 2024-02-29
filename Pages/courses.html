@@ -116,8 +116,13 @@
         <!-- TODO: Add course description, maybe add "read more" buttons -->
 
         <section id="course-elements">
-            <section id="level-one-courses">
+
+            <!-- Level One Courses -->
+            <div class="level-header">
                 <h1>Level One Courses:</h1>
+                <button onclick="toggleExpand('level-one-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-one-courses" class="course-level">
                 <!-- Intro to Comp Prog -->
                 <div class="course-element top-course">
                     <div class="course-element-level">
@@ -293,9 +298,11 @@
             </section>
 
             <!-- Level Two Courses -->
-            <section id="level-two-courses">
-
+            <div class="level-header">
                 <h1>Level Two Courses:</h1>
+                <button onclick="toggleExpand('level-two-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-two-courses" class="course-level">
 
                 <!-- Database Systems -->
                 <div class="course-element top-course">
@@ -467,9 +474,12 @@
             </section>
 
             <!-- Level Three Courses -->
-            <section id="level-three-courses">
-
+            <div class="level-header">
                 <h1>Level Three Courses:</h1>
+                <button onclick="toggleExpand('level-three-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-three-courses" class="course-level">
+
                 <!-- Systems Analysis and Design (CST2234) -->
                 <div class="course-element top-course">
                     <div class="course-element-level">
@@ -611,9 +621,12 @@
             </section>
 
             <!-- Level Four Courses -->
-            <section id="level-four-courses">
-
+            <div class="level-header">
                 <h1>Level Four Courses:</h1>
+                <button onclick="toggleExpand('level-four-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-four-courses" class="course-level">
+
                 <!-- Advanced Database Topics (CST8276) -->
                 <div class="course-element top-course">
                     <div class="course-element-level">
@@ -726,9 +739,12 @@
             </section>
 
             <!-- Level Five Courses -->
-            <section id="level-five-courses">
-
+            <div class="level-header">
                 <h1>Level Five Courses:</h1>
+                <button onclick="toggleExpand('level-five-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-five-courses" class="course-level">
+
                 <!-- Analysis and Design Using Emerging Technologies (CST8400) -->
                 <div class="course-element top-course">
                     <div class="course-element-level">
@@ -900,9 +916,11 @@
             </section>
 
             <!-- Level Six Courses -->
-            <section id="level-six-courses">
-
+            <div class="level-header">
                 <h1>Level Six Courses:</h1>
+                <button onclick="toggleExpand('level-six-courses')" class="level-button">read more / less</button>
+            </div>
+            <section id="level-six-courses" class="course-level">
 
                 <!-- Cybersecurity (CST8512) -->
                 <div class="course-element top-course">
@@ -1046,7 +1064,9 @@
             <!-- Disclaimer -->
             <Section id="disclaimer">
                 <h1>Disclaimer:</h1>
-                <p>All information on this page was gathered from Algonquin's <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/#courses">Computer Programming and Analysis</a> page.</p>
+                <p>All information on this page was gathered from Algonquin's <a
+                        href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/#courses">Computer
+                        Programming and Analysis</a> page.</p>
             </Section>
         </section>
     </section>

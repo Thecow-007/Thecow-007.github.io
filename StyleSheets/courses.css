@@ -100,6 +100,22 @@ nav{
     flex-grow: 2;
 }
 
+.level-button{
+    margin: 2px;
+}
+
+.course-level.active{
+    display: none;
+}
+
+.level-header{
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #course-elements{
     grid-row: 4/5;
     grid-column: 2/4;
