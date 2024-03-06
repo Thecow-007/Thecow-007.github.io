@@ -28,6 +28,12 @@
 .pf-element{
     border: solid var(--light-jet) 2px;
     margin: 5px;
+
+    text-decoration: none;
+}
+
+.pf-element:hover h1{
+    text-decoration: underline;
 }
 
 .pf-element-title{
