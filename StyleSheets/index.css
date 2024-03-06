@@ -1,4 +1,4 @@
-:root{
+:root {
     --jet: #39393A;
     --light-jet: #8b8b92;
     --light-algonquin-green: #66A18D;
@@ -8,29 +8,20 @@
     --marian-blue: #2C3E77;
 }
 
-#main-grid{
+#main-grid {
     display: grid;
     grid-template-columns: 2fr 3fr 3fr 2fr;
     grid-template-rows: auto auto auto 1fr 1fr 1fr auto auto;
 }
 
 @media screen and (max-width: 768px) {
-    #main-grid{
+    #main-grid {
         display: flex;
-        flex-direction: column;
-    }
-
-    #pf-content{
-        flex-wrap: wrap;
-    }
-
-    #portfolio-featured{
-        display: flex !important;
         flex-direction: column;
     }
 }
 
-nav{
+nav {
     grid-row-start: 1;
     grid-row-end: 9;
 
@@ -38,7 +29,7 @@ nav{
     grid-column-end: 2;
 }
 
-#aboutMe-header{
+#aboutMe-header {
     display: flex;
 
     grid-row-start: 1;
@@ -59,13 +50,13 @@ nav{
     justify-content: center;
 }
 
-#aboutMe-header>h1{
+#aboutMe-header>h1 {
     font-family: 'Protest Strike';
     font-size: 150%;
     letter-spacing: 1px;
 }
 
-#daniel-picture-section{
+#daniel-picture-section {
     grid-row-start: 2;
     grid-row-end: 4;
 
@@ -80,14 +71,14 @@ nav{
     padding: 5px;
 }
 
-#daniel-picture{
+#daniel-picture {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 
 }
 
-#main-text{
+#main-text {
     grid-row-start: 2;
     grid-row-end: 5;
 
@@ -97,7 +88,7 @@ nav{
     padding: 10px;
 }
 
-#portfolio-featured{
+#portfolio-featured {
     grid-row-start: 5;
     grid-row-end: 7;
 
@@ -108,7 +99,7 @@ nav{
 
 
 
-#algonquin-courses{
+#algonquin-courses {
     grid-row-start: 7;
     grid-row-end: 9;
 
@@ -118,7 +109,7 @@ nav{
     border: 2px solid var(--algonquin-green);
 
     margin: 2px;
-    
+
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -126,7 +117,7 @@ nav{
     padding-bottom: 10px;
 }
 
-#algonquin-banner-container{
+#algonquin-banner-container {
     grid-row: 1/2;
     grid-column: 1/2;
 }

@@ -11,6 +11,17 @@
     margin: 2px;
 }
 
+@media screen and (max-width: 768px) {
+    #pf-content{
+        flex-wrap: wrap;
+    }
+
+    #portfolio-featured{
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
 #pf-title{
     grid-row: 1/2;
     grid-column: 1/2;
