@@ -1,7 +1,17 @@
+#algonquin-courses{
+    background-color: var(--light-algonquin-green);
+    
+    border: 2px solid var(--algonquin-green);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
 #algonquin-banner{
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    
 }
 
 #algonquin-banner:hover{

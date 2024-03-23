@@ -66,6 +66,8 @@ nav {
     background-color: var(--light-jet);
     max-height: auto;
 
+    border-radius: 10px;
+
     display: flex;
 
     padding: 5px;
@@ -105,8 +107,6 @@ nav {
 
     grid-column-start: 2;
     grid-column-end: 5;
-    background-color: var(--light-algonquin-green);
-    border: 2px solid var(--algonquin-green);
 
     margin: 2px;
 

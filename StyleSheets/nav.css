@@ -30,6 +30,7 @@ nav{
 
     background-color: var(--nav-bg-color);
     border-color: var(--nav-border-color);
+    border-radius: 20px;
 
     margin: 2px;
 
