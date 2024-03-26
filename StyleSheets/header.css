@@ -46,6 +46,7 @@ body{
     background-color: var(--headerBackgroundColor);
     border-color: var(--headerBorderColor);
     border: 2px solid var(--headerBorderColor);
+    border-radius: 20px;
     top: 0;
     width: 99%;
     margin: 3px;
