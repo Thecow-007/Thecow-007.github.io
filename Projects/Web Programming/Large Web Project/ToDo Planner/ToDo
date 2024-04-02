@@ -3,3 +3,17 @@ ToDo-item{
     - When you click the checkbox, the title gets crossed out and moved to bottom of the list.
 }
 
+Search bar{
+    - add search bar
+    - Searches based on Regex like /.*[search].*/
+}
+
+Filters button{
+    - opens a panel full of radio buttons / circle buttons.
+    - First type of filter:
+        - By age, newest to oldest / oldest to newest. (only one can be selected).
+    - Second type
+        - by tag.
+        - list of tags updates every time a new tag is added.
+        - multiple tags can be selected.
+}
