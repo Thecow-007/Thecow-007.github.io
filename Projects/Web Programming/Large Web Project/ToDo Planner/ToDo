@@ -1,0 +1,5 @@
+ToDo-item{
+    - When you click on the items title, a text box appears and you can edit the title.
+    - When you click the checkbox, the title gets crossed out and moved to bottom of the list.
+}
+
