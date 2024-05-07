@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0fb65d;
+}
+
+#footer-title-container{
+    flex-grow: 3;
+    flex-basis: 300px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#to-top-container{
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#to-top{
+    text-align: center;
+}
+
+#footer-spacer{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+

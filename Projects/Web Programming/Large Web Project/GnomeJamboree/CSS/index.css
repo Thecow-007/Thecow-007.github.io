@@ -1,0 +1,143 @@
+:root{
+    /* Colors */
+    --post-background: rgb(155, 191, 253);
+    --post-border: rgb(51, 82, 136);
+    --post-rec-container-back: rgb(128, 156, 204);
+    --post-rec-comments-back: rgb(113, 136, 175);
+
+}
+
+
+.post{
+    background-color: var(--post-background);
+    border: 5px solid var(--post-border);
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+.img-container{
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.post-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post-title{
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.post-title h3{
+    margin-bottom: 0px;
+}
+
+.txt-post .post-title{
+    grid-column: 1/3;
+}
+
+.post-author-container{
+    display: flex;
+    align-items: center;
+}
+
+.author-pfp-container{
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.author-pfp{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+
+    border: 2px solid black;
+}
+
+.post-content{
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    padding-left: 20px;
+}
+
+.txt-post .post-content{
+    grid-column: 1/3;
+}
+
+.post-tag{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+}
+
+.post-tag p{
+    display: inline;
+    border-radius: 30%;
+    padding: 5px;
+    margin: 0px;
+    color: white;
+}
+
+.rec-comments-container{
+    grid-row: 1/3;
+    grid-column: 3/4;
+
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10%;
+
+    background-color: var(--post-rec-container-back);
+}
+
+.rec-comment{
+    background-color: var(--post-rec-comments-back);
+    border-radius: 10%;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+}
+
+.rec-comment p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comment-author{
+    text-align: right;
+    padding-right: 10px;
+    text-decoration: underline;
+}
+
+.all-comments-container{
+    grid-row: 3/4;
+    grid-column: 3/4;
+
+    text-align: right;
+    padding-right: 5px;
+}

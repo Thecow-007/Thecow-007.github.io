@@ -1,0 +1,139 @@
+:root{
+    /* Colors */
+    --post-background: rgb(155, 191, 253);
+    --post-border: rgb(51, 82, 136);
+    --post-rec-container-back: rgb(128, 156, 204);
+    --post-rec-comments-back: rgb(113, 136, 175);
+
+}
+
+#post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: var(--post-background);
+    border: 5px solid var(--post-border);
+    border-radius: 10px;
+
+    margin: 5px;
+}
+
+#post>*{
+    margin: 5px;
+}
+
+.post-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.post-content>p{
+    margin-top: 0px;
+}
+
+.post-author-container{
+    display: flex;
+    align-items: center;
+}
+
+.author-pfp-container{
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.pfp{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+
+    border: 2px solid black;
+}
+
+.img-container{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.post-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tag{
+    display: inline;
+    border-radius: 30%;
+    padding: 5px;
+    margin: 0px;
+    color: white;
+}
+
+#comments-header{
+    margin-left: 10px;
+}
+
+#create-comment-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--post-background);
+    border: 5px solid var(--post-border);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#create-comment-bar>*{
+    margin: 5px;
+}
+
+
+#create-comment{
+    height: 100%;
+    flex-grow: 2;
+}
+
+#add-comment-button{
+    height: 100%;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+
+    background-color: var(--post-background);
+    border: 5px solid var(--post-border);
+    border-radius: 10px;
+
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.comment>*{
+    margin: 5px;
+}
+
+.comment-pfp-container{
+    
+}
+
+.comment-content-container{
+    width: 100%;
+    margin-left: 10px;
+}
+ .comment-author{
+    text-align: right;
+ }

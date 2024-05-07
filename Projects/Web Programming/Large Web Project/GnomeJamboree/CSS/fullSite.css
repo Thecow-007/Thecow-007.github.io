@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: rgb(86, 106, 126);
+}
+
+html{
+    font-family: "Platypi";
+}
+
+html{
+    padding: 0px;
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+}

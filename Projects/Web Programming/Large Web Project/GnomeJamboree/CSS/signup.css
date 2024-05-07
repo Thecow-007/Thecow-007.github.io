@@ -1,0 +1,13 @@
+#signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Applies to all direct children of signup-form */
+#signup-form>*{
+    width: 200px;
+    padding: 10px;
+}
